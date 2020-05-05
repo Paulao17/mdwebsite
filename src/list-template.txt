@@ -1,0 +1,3 @@
+$if(title)$
+- [$pagetitle$]($sourcefile$) $if(author)$by $author$$endif$. [pdf]($sourcefile$) [md]($sourcefile$)
+$endif$
