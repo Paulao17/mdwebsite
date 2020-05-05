@@ -17,7 +17,7 @@ echo "Creating index.md"
 touch build/index.md
 
 echo "Converting files"
-for file in src/*.md src/*/*.md
+for file in src/*.md src/*/*.md src/*/*/*.md src/*/*/*/*.md
   do
     if [ -f "$file" ]
     then
