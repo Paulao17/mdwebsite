@@ -1,0 +1,13 @@
+---
+title:  'Example file'
+author:
+- Paul
+keywords: [English, example, markdown]
+abstract: |
+  Just an Example
+
+  spans multiple ligns
+lang: en
+date: 'May. 5, 2020'
+heading: 'Paul 04/2020' # Shown at top of pdf
+...
