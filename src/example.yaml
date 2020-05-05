@@ -1,5 +1,6 @@
 ---
 title:  'Example file'
+id: example # Must match file name
 author:
 - Paul
 keywords: [English, example, markdown]
