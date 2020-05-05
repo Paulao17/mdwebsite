@@ -6,9 +6,10 @@ done
 
 echo "Replicating folders"
 for directory in src/*/ src/*/*/ src/*/*/*/  ; do
-  if [ -f "$directory" ]
-  mkdir $(echo $directory | sed 's/src/build/')
-  echo " created $(echo $directory | sed 's/src/build/')"
+  if [ -f "$directory" ]; then
+    mkdir $(echo $directory | sed 's/src/build/')
+    echo " created $(echo $directory | sed 's/src/build/')"
+  fi
 done
 
 echo "Copying static files"
