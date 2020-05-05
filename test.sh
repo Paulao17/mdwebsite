@@ -5,7 +5,7 @@ for file in build/*; do
 done
 
 echo "Replicating folders"
-for directory in src/*/ ; do
+for directory in src/*/ src/*/*/ src/*/*/*/  ; do
   mkdir $(echo $directory | sed 's/src/build/')
   echo " created $(echo $directory | sed 's/src/build/')"
 done
