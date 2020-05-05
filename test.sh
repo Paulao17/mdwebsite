@@ -5,11 +5,9 @@ for file in build/*; do
 done
 
 echo "Replicating folders"
-for directory in src/*/ src/*/*/ src/*/*/*/  ; do
-  if [ -f "$directory" ]; then
+for directory in src/*/ ; do
     mkdir $(echo $directory | sed 's/src/build/')
     echo " created $(echo $directory | sed 's/src/build/')"
-  fi
 done
 
 echo "Copying static files"
@@ -19,7 +17,7 @@ echo "Creating index.md"
 touch build/index.md
 
 echo "Converting files"
-for file in src/*.md src/*/*.md src/*/*/*.md src/*/*/*/*.md
+for file in src/*.md src/*/*.md
   do
     if [ -f "$file" ]
     then
